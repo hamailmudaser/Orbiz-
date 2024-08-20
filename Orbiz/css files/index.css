@@ -12,13 +12,14 @@ nav {
   height: 80px;
   padding: 5px;
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-align: center;
   background-color: #0e0d13;
 }
 nav .logo {
@@ -50,6 +51,7 @@ nav ul {
           justify-content: center;
 }
 nav ul li {
+  margin-left: 53px;
   height: 30px;
 }
 nav ul li a {
@@ -76,6 +78,16 @@ nav .nav-buttons {
   display: -ms-flexbox;
   display: flex;
 }
+nav .nav-buttons .black-btn {
+  margin-right: 10px;
+  border: 3px solid #232332;
+  border-radius: 30px;
+  width: 120px;
+  height: 50px;
+  font-weight: 600;
+  color: aliceblue;
+  background-color: #2a2a2a;
+}
 nav .nav-buttons button {
   margin-right: 10px;
   border: 3px solid #232332;
@@ -84,12 +96,7 @@ nav .nav-buttons button {
   height: 50px;
   font-weight: 600;
   color: aliceblue;
-  background-color: #1b1b25;
-}
-nav .nav-buttons button:hover {
-  border: none;
   background-color: #5f58fe;
-  color: white;
 }
 nav .sidebar {
   position: fixed;
@@ -154,23 +161,26 @@ nav .menu i {
   background-color: #0e0d13;
 }
 .main .container {
-  margin-top: -40px;
-  display: ruby-text;
-  margin-left: 80px;
-  margin-right: 90px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-right: auto;
 }
 .main .container .section-1 {
-  margin-top: 0px;
+  margin-top: 160px;
 }
 .main .container .section-1 .btn {
   height: 35px;
   width: 170px;
   background-color: #1b1b25;
+  border: 1px solid #474747;
   color: white;
-  border-radius: 10px;
+  border-radius: 32px;
 }
 .main .container .section-1 .btn i {
   margin-right: 5px;
@@ -192,25 +202,30 @@ nav .menu i {
 }
 .main .container .section-1 .nav-buttons button {
   margin-right: 10px;
+  border: none;
+  border-radius: 30px;
+  width: 120px;
+  height: 50px;
+  font-weight: 600;
+  color: aliceblue;
+  background-color: #5f58fe;
+}
+.main .container .section-1 .nav-buttons .black-btn {
+  margin-right: 10px;
   border: 3px solid #232332;
   border-radius: 30px;
   width: 120px;
   height: 50px;
   font-weight: 600;
   color: aliceblue;
-  background-color: #1b1b25;
-}
-.main .container .section-1 .nav-buttons button:hover {
-  border: none;
-  background-color: #5f58fe;
-  color: white;
+  background-color: #2a2a2a;
 }
 .main .container .card-background {
   margin-top: 125px;
   background-color: #1b1b25;
   padding: 25px;
   width: 343px;
-  border-radius: 45px;
+  border-radius: 25px;
   height: 416px;
 }
 .main .container .card-background .card {
@@ -300,11 +315,14 @@ nav .menu i {
 .main .notification {
   margin-top: 50px;
   height: 165px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+}
+.main .notification .note {
+  margin-left: 160px;
+  margin-right: -14px;
 }
 .main .notification .note .div-icon {
   border: 1px solid rgb(50, 50, 50);
@@ -332,12 +350,13 @@ nav .menu i {
   margin-top: 60px;
 }
 .image-section p {
-  font-size: 17px;
+  font-size: 20px;
   color: #9e9e9e;
   font-weight: 500;
   text-align: center;
 }
-.image-section .image-logo {
+.image-section .image-logo,
+.image-section .image-logo-1 {
   margin-top: 65px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -347,24 +366,15 @@ nav .menu i {
   display: -ms-flexbox;
   display: flex;
 }
-.image-section .image-logo img {
-  margin-top: -20px;
-  width: 150px;
-  height: 45px;
+.image-section .image-logo img, .image-section .image-logo .image,
+.image-section .image-logo-1 img,
+.image-section .image-logo-1 .image {
+  margin-top: 20px;
+  width: 208px;
+  height: 60px;
 }
 .image-section .image-logo-1 {
   margin-top: 30px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.image-section .image-logo-1 img {
-  width: 150px;
-  height: 45px;
 }
 
 .container-1 {
@@ -373,12 +383,13 @@ nav .menu i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .container-1 .card-1 {
   border-radius: 30px;
-  width: 500px;
+  width: 600px;
   height: 370px;
   background-color: #eff0f2;
 }
@@ -443,6 +454,7 @@ nav .menu i {
 }
 .container-1 .right-content {
   margin-top: 40px;
+  margin-left: 75px;
 }
 .container-1 .right-content .right-button {
   padding: 5px;
@@ -470,15 +482,10 @@ nav .menu i {
 }
 .container-1 .right-content .right-btn button {
   margin-right: 10px;
-  border: 3px solid #232332;
   border-radius: 30px;
   width: 170px;
   height: 50px;
   font-weight: 600;
-  color: aliceblue;
-  background-color: #1b1b25;
-}
-.container-1 .right-content .right-btn button:hover {
   border: none;
   background-color: #5f58fe;
   color: white;
@@ -493,8 +500,9 @@ nav .menu i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .container-2 .right-content {
   margin-top: 40px;
@@ -525,15 +533,10 @@ nav .menu i {
 }
 .container-2 .right-content .right-btn button {
   margin-right: 10px;
-  border: 3px solid #232332;
   border-radius: 30px;
   width: 170px;
   height: 50px;
   font-weight: 600;
-  color: aliceblue;
-  background-color: #1b1b25;
-}
-.container-2 .right-content .right-btn button:hover {
   border: none;
   background-color: #5f58fe;
   color: white;
@@ -544,6 +547,7 @@ nav .menu i {
   width: 500px;
   height: 250px;
   background-color: #eff0f2;
+  margin-left: 150px;
 }
 .container-2 .card-1 .div-1 {
   margin-top: -18px;
@@ -583,12 +587,13 @@ nav .menu i {
 
 .picture {
   margin-bottom: 100px;
-  margin-top: -20px;
+  margin-top: 89px;
   text-align: center;
 }
 .picture img {
-  height: 354px;
-  width: 750px;
+  height: 415px;
+  width: 80%;
+  margin-bottom: 40px;
 }
 .picture .right-button {
   padding: 5px;
@@ -604,8 +609,8 @@ nav .menu i {
   color: white;
 }
 .picture h1 {
-  font-size: 40px;
-  margin-top: 15px;
+  font-size: 45px;
+  margin-top: 17px;
 }
 .picture p {
   margin-top: -15px;
@@ -618,15 +623,10 @@ nav .menu i {
 }
 .picture .right-btn button {
   margin-right: 10px;
-  border: 3px solid #232332;
   border-radius: 30px;
   width: 170px;
   height: 42px;
   font-weight: 600;
-  color: aliceblue;
-  background-color: #1b1b25;
-}
-.picture .right-btn button:hover {
   border: none;
   background-color: #5f58fe;
   color: white;
@@ -654,7 +654,7 @@ nav .menu i {
   color: white;
 }
 .container-3 .customer h1 {
-  font-size: 40px;
+  font-size: 50px;
   margin-top: 15px;
 }
 .container-3 .customer p {
@@ -703,6 +703,7 @@ nav .menu i {
   margin-left: 10px;
 }
 .container-3 .card-overflow .card-1 .customer-card p {
+  text-align: left;
   font-size: 16px;
   font-weight: 640;
 }
@@ -722,6 +723,7 @@ nav .menu i {
 }
 .container-3 .card-overflow .card-1 .customer-card .customer-id .customer-data {
   margin-left: 20px;
+  text-align: left;
 }
 .container-3 .card-overflow .card-1 .customer-card .customer-id .customer-data h4 {
   margin-top: 15px;
@@ -769,6 +771,7 @@ nav .menu i {
   margin-left: 10px;
 }
 .container-3 .card-overflow .card-2 .customer-card p {
+  text-align: left;
   font-size: 16px;
   font-weight: 640;
 }
@@ -787,6 +790,7 @@ nav .menu i {
   height: 38px;
 }
 .container-3 .card-overflow .card-2 .customer-card .customer-id .customer-data {
+  text-align: left;
   margin-left: 20px;
 }
 .container-3 .card-overflow .card-2 .customer-card .customer-id .customer-data h4 {
@@ -798,84 +802,13 @@ nav .menu i {
   font-size: 13px;
   margin-top: 5px;
 }
-.container-3 .card-overflow .card-3 {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.container-3 .card-overflow .card-3 .customer-card {
-  margin-left: 50px;
-  padding: 20px 0px 10px 20px;
-  border-radius: 34px;
-  width: 296px;
-  height: 283px;
-  background-color: white;
-}
-.container-3 .card-overflow .card-3 .customer-card .card-icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.container-3 .card-overflow .card-3 .customer-card .card-icon i {
-  margin-left: 5px;
-  color: gold;
-  font-size: 18px;
-}
-.container-3 .card-overflow .card-3 .customer-card .card-icon p {
-  font-size: 15;
-  font-weight: 600;
-  color: #4d4d4f;
-  margin-left: 10px;
-}
-.container-3 .card-overflow .card-3 .customer-card p {
-  font-size: 16px;
-  font-weight: 640;
-}
-.container-3 .card-overflow .card-3 .customer-card .customer-id {
-  margin-top: 20px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.container-3 .card-overflow .card-3 .customer-card .customer-id img {
-  border-radius: 50px;
-  width: 44px;
-  height: 38px;
-}
-.container-3 .card-overflow .card-3 .customer-card .customer-id .customer-data {
-  margin-left: 20px;
-}
-.container-3 .card-overflow .card-3 .customer-card .customer-id .customer-data h4 {
-  margin-top: 15px;
-  margin-bottom: 5px;
-}
-.container-3 .card-overflow .card-3 .customer-card .customer-id .customer-data .customer-add {
-  color: #828282;
-  font-size: 13px;
-  margin-top: 5px;
-}
 .container-3 .card-overflow .overflow-btn {
   margin-top: 50px;
   margin-bottom: 50px;
-  border: 3px solid #232332;
   border-radius: 30px;
   width: 209px;
   height: 48px;
   font-weight: 600;
-  color: aliceblue;
-  background-color: #1b1b25;
-}
-.container-3 .card-overflow .overflow-btn:hover {
   border: none;
   background-color: #5f58fe;
   color: white;
@@ -909,7 +842,7 @@ nav .menu i {
   color: white;
 }
 .faq .customer h1 {
-  font-size: 40px;
+  font-size: 52px;
   margin-top: 15px;
 }
 .faq .customer p {
@@ -945,13 +878,13 @@ nav .menu i {
   color: black;
   cursor: pointer;
   padding: 18px;
-  width: 645px;
+  width: 745px;
   border: 1px solid rgb(211, 211, 211);
   border-radius: 10px;
   height: 50px;
   margin-top: 10px;
   text-align: left;
-  font-size: 15px;
+  font-size: 17px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -1006,10 +939,16 @@ nav .menu i {
   color: aliceblue;
   background-color: #1b1b25;
 }
-.fotter .fotter-head .fotter-buttons button:hover {
-  border: none;
+.fotter .fotter-head .fotter-buttons .black-btn {
   background-color: #5f58fe;
-  color: white;
+  margin-top: 35px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 30px;
+  width: 120px;
+  height: 50px;
+  font-weight: 600;
+  color: aliceblue;
 }
 .fotter .fotter-body {
   margin-top: 50px;
@@ -1072,29 +1011,35 @@ nav .menu i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .fotter .fotter-f li {
   list-style: none;
   color: #606060;
   font-weight: 600;
   margin-bottom: 50px;
+  margin-left: 50px;
 }
 
 @media (max-width: 1024px) {
   nav {
+    width: 100%;
     padding: 10px;
   }
   nav .logo {
     margin-left: 25px;
   }
+  nav ul li {
+    margin-left: 0px;
+    height: 30px;
+  }
   .main .container {
     margin-top: 0px;
   }
   .main .container .section-1 {
-    margin-top: 100px;
+    margin-top: 160px;
   }
   .main .container .section-1 .btn {
     height: 33px;
@@ -1139,6 +1084,10 @@ nav .menu i {
   .main .container .card-background .card hr {
     width: 260px;
   }
+  .main .notification .note {
+    margin-left: 72px;
+    margin-right: 15px;
+  }
   .main .notification .note .div-icon {
     height: 23px;
     width: 25px;
@@ -1153,6 +1102,11 @@ nav .menu i {
   .main .notification .note p {
     font-size: 11px;
   }
+  .image-section .image-logo .image,
+  .image-section .image-logo-1 .image {
+    width: 174px;
+    height: 60px;
+  }
   .container-1 .card-1 {
     width: 415px;
   }
@@ -1161,23 +1115,20 @@ nav .menu i {
   }
   .container-2 .card-1 {
     width: 385px;
+    margin-left: 53px;
   }
   .container-3 .card-overflow {
-    height: 300px;
     width: 100%;
-    overflow-y: scroll;
   }
   .container-3 .card-overflow .card-1 .customer-card,
-  .container-3 .card-overflow .card-2 .customer-card,
-  .container-3 .card-overflow .card-3 .customer-card {
+  .container-3 .card-overflow .card-2 .customer-card {
     margin-left: auto;
     margin-right: auto;
     width: 270px;
     height: 275px;
   }
   .container-3 .card-overflow .card-1 p,
-  .container-3 .card-overflow .card-2 p,
-  .container-3 .card-overflow .card-3 p {
+  .container-3 .card-overflow .card-2 p {
     text-align: left;
   }
   .fotter .fotter-body .col-1 {
@@ -1205,6 +1156,9 @@ nav .menu i {
   nav ul li {
     height: 25px;
   }
+  nav ul li a {
+    margin-right: 15px;
+  }
   nav .nav-buttons {
     display: none;
   }
@@ -1214,7 +1168,7 @@ nav .menu i {
     display: flex;
   }
   .main .container .section-1 {
-    margin-top: 112px;
+    margin-top: 170px;
   }
   .main .container .section-1 .btn {
     height: 30px;
@@ -1222,12 +1176,13 @@ nav .menu i {
     font-size: 8px;
   }
   .main .container .section-1 h1 {
-    font-size: 30px;
+    font-size: 26px;
   }
   .main .container .section-1 p {
     font-size: 10px;
   }
-  .main .container .section-1 .nav-buttons button {
+  .main .container .section-1 .nav-buttons button,
+  .main .container .section-1 .nav-buttons .black-btn {
     margin-right: 10px;
     border: 3px solid #232332;
     border-radius: 30px;
@@ -1238,9 +1193,21 @@ nav .menu i {
     color: aliceblue;
     background-color: #1b1b25;
   }
+  .main .container .section-1 .nav-buttons .black-btn {
+    margin-right: 10px;
+    border: none;
+    border-radius: 30px;
+    width: 100px;
+    font-size: 11px;
+    height: 37px;
+    font-weight: 600;
+    color: aliceblue;
+    background-color: #5f58fe;
+  }
   .main .container .card-background {
     width: 263px;
     height: 298px;
+    margin-left: 0px;
   }
   .main .container .card-background .card {
     height: 295px !important;
@@ -1271,6 +1238,18 @@ nav .menu i {
     margin-left: 18px !important;
     font-size: 10px !important;
   }
+  .main .notification {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .main .notification .note {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
   .main .notification .note h3 {
     font-size: 11px;
   }
@@ -1280,10 +1259,16 @@ nav .menu i {
   .image-section p {
     font-size: 15px;
   }
+  .image-section .image-logo,
+  .image-section .image-logo-1 {
+    margin-top: 20px;
+  }
   .image-section .image-logo img,
-  .image-section .image-logo-1 img {
-    width: 135px;
-    height: 45px;
+  .image-section .image-logo .image,
+  .image-section .image-logo-1 img,
+  .image-section .image-logo-1 .image {
+    width: 131px;
+    height: 38px;
   }
   .container-1 .right-content .right-button {
     font-size: 10px;
@@ -1343,6 +1328,7 @@ nav .menu i {
     height: 38px;
   }
   .container-2 .card-1 {
+    margin-left: 28px;
     padding-top: 35px;
     border-radius: 30px;
     width: 320px;
@@ -1362,49 +1348,65 @@ nav .menu i {
   .container-2 .card-1 .div-1 .div-2 p {
     font-size: 10px;
   }
+  .picture {
+    margin-top: 30px;
+  }
+  .picture img {
+    height: 270px;
+    width: 88%;
+    margin-bottom: 40px;
+  }
+  .picture h1 {
+    font-size: 37px;
+  }
+  .container-3 .customer h1 {
+    font-size: 38px;
+    margin-top: 15px;
+  }
   .container-3 .card-overflow {
-    height: 200px;
     width: 100%;
-    overflow-y: scroll;
   }
   .container-3 .card-overflow .card-1 .customer-card,
-  .container-3 .card-overflow .card-2 .customer-card,
-  .container-3 .card-overflow .card-3 .customer-card {
+  .container-3 .card-overflow .card-2 .customer-card {
+    margin-right: 0px;
+    margin-left: 10px;
     width: 201px;
     height: 219px;
+    margin-top: -29px;
   }
   .container-3 .card-overflow .card-1 .customer-card .card-icon i,
-  .container-3 .card-overflow .card-2 .customer-card .card-icon i,
-  .container-3 .card-overflow .card-3 .customer-card .card-icon i {
+  .container-3 .card-overflow .card-2 .customer-card .card-icon i {
     font-size: 13px;
   }
   .container-3 .card-overflow .card-1 .customer-card p,
-  .container-3 .card-overflow .card-2 .customer-card p,
-  .container-3 .card-overflow .card-3 .customer-card p {
+  .container-3 .card-overflow .card-2 .customer-card p {
     font-weight: 654;
     font-size: 11px;
     text-align: left;
   }
   .container-3 .card-overflow .card-1 .customer-card .customer-id img,
-  .container-3 .card-overflow .card-2 .customer-card .customer-id img,
-  .container-3 .card-overflow .card-3 .customer-card .customer-id img {
+  .container-3 .card-overflow .card-2 .customer-card .customer-id img {
     width: 33px;
     height: 30px;
   }
   .container-3 .card-overflow .card-1 .customer-card .customer-id .customer-data h4,
-  .container-3 .card-overflow .card-2 .customer-card .customer-id .customer-data h4,
-  .container-3 .card-overflow .card-3 .customer-card .customer-id .customer-data h4 {
+  .container-3 .card-overflow .card-2 .customer-card .customer-id .customer-data h4 {
     font-size: 12px;
   }
   .container-3 .card-overflow .card-1 .customer-card .customer-id .customer-data .customer-add,
-  .container-3 .card-overflow .card-2 .customer-card .customer-id .customer-data .customer-add,
-  .container-3 .card-overflow .card-3 .customer-card .customer-id .customer-data .customer-add {
+  .container-3 .card-overflow .card-2 .customer-card .customer-id .customer-data .customer-add {
     font-size: 8px;
   }
   .overflow-btn {
     width: 185px;
     font-size: 11px;
     height: 43px;
+  }
+  .faq .customer h1 {
+    font-size: 38px;
+  }
+  .faq .customer p {
+    font-size: 13px;
   }
   .faq .accordians .accordian {
     font-size: 12px;
@@ -1414,6 +1416,9 @@ nav .menu i {
     width: 502px;
     font-size: 13px;
   }
+  .fotter .fotter-head {
+    margin-left: 58px;
+  }
   .fotter .fotter-head h1 {
     font-size: 33px;
   }
@@ -1421,6 +1426,13 @@ nav .menu i {
     width: 100px;
     height: 41px;
     font-size: 11px;
+  }
+  .fotter .fotter-head .fotter-buttons .black-btn {
+    width: 100px;
+    height: 41px;
+    font-size: 11px;
+    background-color: #5f58fe;
+    border: none;
   }
   .fotter .fotter-body .col-1 .logo img {
     width: 35px;
@@ -1498,25 +1510,36 @@ nav .menu i {
             flex-direction: column;
   }
   .main .container .section-1 {
+    margin-top: 130px;
     text-align: center;
   }
   .main .container .section-1 h1 {
-    text-align: center;
-    font-size: 25px;
+    font-size: 30px !important;
   }
   .main .container .section-1 p {
-    text-align: center;
-    font-size: 8px;
+    font-size: 11px;
+  }
+  .main .container .section-1 .btn {
+    width: 110px;
+    height: 23px;
   }
   .main .container .section-1 .nav-buttons {
-    display: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .main .container .card-background {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
     width: 244px;
     height: 284px;
-    margin-top: 5px;
-    margin-left: 0px;
-    margin-bottom: 20px;
+    margin: auto;
+    margin-top: 24px;
+    margin-bottom: 0px;
   }
   .main .container .card-background .card {
     height: 280px !important;
@@ -1543,9 +1566,13 @@ nav .menu i {
     height: 34px !important;
   }
   .card-overflow {
-    height: 200px;
     width: 100%;
-    overflow-y: scroll;
+  }
+  .container-1 {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: reverse !important;
+        -ms-flex-direction: column-reverse !important;
+            flex-direction: column-reverse !important;
   }
   .container-1,
   .container-2 {
@@ -1557,6 +1584,21 @@ nav .menu i {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .container-1 .right-content,
+  .container-2 .right-content {
+    margin-left: auto;
+    text-align: center;
+    margin-right: auto;
+  }
+  .container-1 .right-content h1,
+  .container-2 .right-content h1 {
+    font-size: 30px !important;
+  }
+  .container-1 .right-content .right-button,
+  .container-2 .right-content .right-button {
+    font-size: 9px;
+    height: 22px;
   }
   .container-1 .card-1,
   .container-2 .card-1 {
@@ -1577,10 +1619,11 @@ nav .menu i {
     font-size: 11px !important;
   }
   h1 {
-    font-size: 22px !important;
+    font-size: 25px !important;
   }
   .right-button {
     font-size: 10px;
+    height: 21px !important;
   }
   .right-btn button {
     width: 150px !important;
@@ -1596,21 +1639,22 @@ nav .menu i {
   .container-3 .customer p {
     font-size: 11px;
   }
-  .container-3 .card-1,
-  .container-3 .card-2,
-  .container-3 .card-3 {
+  .container-3 .card-overflow .card-1,
+  .container-3 .card-overflow .card-2 {
+    margin-left: 100px;
     margin-top: 20px !important;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .container-3 .card-1 .customer-card,
-  .container-3 .card-2 .customer-card,
-  .container-3 .card-3 .customer-card {
+  .container-3 .card-overflow .card-1 .customer-card,
+  .container-3 .card-overflow .card-2 .customer-card {
     margin-top: 20px;
   }
   .container-3 .card-overflow .overflow-btn {
+    margin-top: 25px;
+    margin-bottom: 25px;
     font-size: 9px;
     width: 138px;
     height: 34px;
@@ -1622,7 +1666,7 @@ nav .menu i {
   }
   .faq .customer h1 {
     margin-top: 10px;
-    font-size: 20px !important;
+    font-size: 23px !important;
   }
   .faq .customer p {
     margin-top: 0px;
@@ -1642,6 +1686,9 @@ nav .menu i {
     width: 300px !important;
     font-size: 9px !important;
   }
+  .fotter .fotter-head {
+    margin-left: 25px;
+  }
   .fotter .fotter-head h1 {
     font-size: 17px !important;
   }
@@ -1653,11 +1700,27 @@ nav .menu i {
     font-size: 10px;
     margin-top: 5px;
   }
+  .fotter .fotter-head .fotter-buttons .black-btn {
+    background-color: #5f58fe;
+    border: none;
+    margin-bottom: 20px;
+    margin-right: 4px;
+    width: 85px;
+    height: 36px;
+    font-size: 10px;
+    margin-top: 5px;
+  }
+  .fotter .fotter-body {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+    grid-template-columns: auto auto;
+  }
   .fotter .fotter-body .col-1 {
     display: none;
   }
   .fotter .fotter-body .col-2 {
-    margin-left: 30px;
+    margin-left: 70px;
   }
   .fotter .fotter-body .col-2 li {
     font-size: 10px;
@@ -1667,32 +1730,38 @@ nav .menu i {
   }
 }
 @media (max-width: 375px) {
-  .card-overflow {
-    height: 200px;
-    width: 100%;
-    overflow-y: scroll;
+  .card-background {
+    margin-bottom: 25px !important;
+  }
+  .image-section .image-logo .image, .image-section .image-logo img, .image-section .image-logo-1 .image, .image-section .image-logo-1 img {
+    margin-top: 10px !important;
+    width: 67px !important;
+  }
+  .container-3 .card-overflow .card-1, .container-3 .card-overflow .card-2 {
+    margin-left: 67px;
   }
   .fotter .fotter-body .col-2 {
-    margin-left: 20px;
+    margin-left: 50px;
   }
 }
 @media (max-width: 320px) {
   .main .container .section-1 h1 {
-    font-size: 13px !important;
+    font-size: 25px !important;
   }
   .main .container .section-1 .btn {
-    height: 24px;
-    width: 89px;
+    height: 20px;
+    width: 83px;
     font-size: 6px;
   }
   .main .container .section-1 p {
-    font-size: 4px;
+    font-size: 8px;
   }
   .main .container .card-background {
     width: 215px;
     height: 235px;
-    margin-top: 4px;
-    margin-left: 4px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 32px;
   }
   .main .container .card-background .card {
@@ -1741,9 +1810,10 @@ nav .menu i {
     font-size: 9px;
   }
   .container-3 .card-overflow {
-    height: 200px;
     width: 100%;
-    overflow-y: scroll;
+  }
+  .container-3 .card-overflow .card-1, .container-3 .card-overflow .card-2 {
+    margin-left: 50px !important;
   }
   .image-section p {
     font-size: 10px;
@@ -1871,23 +1941,17 @@ nav .menu i {
     font-size: 8px !important;
   }
   .fotter .fotter-head {
-    text-align: center;
+    margin-left: 70px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 100%;
-  }
-  .fotter .fotter-head .fotter-buttons {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   .fotter .fotter-body {
     margin-top: 17px;
   }
   .fotter .fotter-body .col-2 {
-    margin-left: 8px;
+    margin-left: 40px;
   }
   .fotter .fotter-body .col-2 p {
     font-size: 9px;
